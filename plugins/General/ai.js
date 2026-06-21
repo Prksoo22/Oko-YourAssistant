@@ -1,3 +1,14 @@
+// ==========================================
+// O k o - Y o u r A s s i s t a n t
+// Created by : Prks.adiw -> Instagram
+// Part of : OkoAi - WhatsApp Bot
+// Github : Prksoo22
+// 
+// Premium WhatsApp Bot! Not for resale.
+// All forms of ownership are owned by the Maker and the Buyer. It should be noted that the Buyer is prohibited from reselling the Goods.
+//             OkoAi - ©Since of 2020
+// ==========================================
+
 import { getAudioUrl } from 'google-tts-api';
 import fs from 'fs';
 import axios from 'axios';
@@ -36,8 +47,6 @@ export default async function (sock, m, text, sender) {
 
         const json = await res.json();
         const responseText = String(json.result?.answer || json.result || "");
-
-        // --- HANDLER FITUR ---
         
         // 1. TIKTOK
         if (responseText.includes('[TIKTOK]')) {
@@ -56,7 +65,7 @@ export default async function (sock, m, text, sender) {
                 await sock.sendMessage(sender, { video: { url: apiRes.data.result[0].url } }, { quoted: m });
             }
         }
-        // 3. VOICE NOTE (Versi stabil via npm google-tts-api)
+        // 3. VOICE NOTE 
         else if (responseText.includes('[VN]')) {
             const vnText = responseText.split('[VN] ')[1]?.trim();
             const audioUrl = getAudioUrl(vnText, { lang: 'id', slow: false, host: 'https://translate.google.com' });
