@@ -1,7 +1,7 @@
 # O k o - Y o u r A s s i s t a n t
 
 > MOHON UNTUK LITERASINYA
-> Ini adalah Base Bot murni buatan Prakoso Adi Wibowo, tipe script yang tercantum saat ini adalah Plugins Esm (Modular). Script ini bersifat polosan (Base Open Source) dan tidak diperuntukkan dijual! Ketahuan menjual = pahala anda tertransfer ke saya.. hehe.
+> - Ini adalah Base Bot murni buatan Prakoso Adi Wibowo, tipe script yang tercantum saat ini adalah Plugins Esm (Modular). Script ini bersifat polosan (Base Open Source) dan tidak diperuntukkan dijual! Ketahuan menjual = pahala anda tertransfer ke saya.. hehe.
 
 > MEDIA SOSIAL
 > - IG : Prks.adiw
