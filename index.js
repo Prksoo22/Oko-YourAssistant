@@ -1,3 +1,14 @@
+// ==========================================
+// O k o - Y o u r A s s i s t a n t
+// Created by : Prks.adiw -> Instagram
+// Part of : OkoAi - WhatsApp Bot
+// Github : Prksoo22
+// 
+// Premium WhatsApp Bot! Not for resale.
+// All forms of ownership are owned by the Maker and the Buyer. It should be noted that the Buyer is prohibited from reselling the Goods.
+//             OkoAi - ©Since of 2020
+// ==========================================
+
 import { makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers, fetchLatestBaileysVersion } from '@whiskeysockets/baileys';
 import pino from 'pino';
 import fs from 'fs';
