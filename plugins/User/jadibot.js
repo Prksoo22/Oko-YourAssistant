@@ -1,3 +1,14 @@
+// ==========================================
+// O k o - Y o u r A s s i s t a n t
+// Created by : Prks.adiw -> Instagram
+// Part of : OkoAi - WhatsApp Bot
+// Github : Prksoo22
+// 
+// Premium WhatsApp Bot! Not for resale.
+// All forms of ownership are owned by the Maker and the Buyer. It should be noted that the Buyer is prohibited from reselling the Goods.
+//             OkoAi - ©Since of 2020
+// ==========================================
+
 import fs from 'fs';
 import path from 'path';
 import { makeWASocket, useMultiFileAuthState, Browsers } from '@whiskeysockets/baileys';
@@ -11,7 +22,6 @@ if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir, { recursive: true });
 if (!fs.existsSync(dbPath)) fs.writeFileSync(dbPath, JSON.stringify({}));
 
 export default async function (sock, m, text, sender) {
-    // 1. PERINTAH .jadibot <nomor>
     if (text.startsWith('.jadibot')) {
         const args = text.split(' ');
         const targetNumber = args[1]?.replace(/[^0-9]/g, '');
@@ -23,7 +33,6 @@ export default async function (sock, m, text, sender) {
         let db = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
         const now = Date.now();
 
-        // SISTEM TRIAL 3 HARI (DITAMBAHKAN KEMBALI)
         if (!db[sender]) {
             db[sender] = { 
                 premium: false, 
@@ -52,7 +61,6 @@ export default async function (sock, m, text, sender) {
 
         subSock.ev.on('creds.update', saveCreds);
 
-        // Notifikasi Pairing Code yang Pasti Muncul
         setTimeout(async () => {
             try {
                 if (!state.creds.registered) {
@@ -85,7 +93,6 @@ export default async function (sock, m, text, sender) {
         });
     }
 
-    // 2. PERINTAH .setprompt <prompt baru>
     if (text.startsWith('.setprompt ')) {
         let db = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
         if (!db[sender]) {
