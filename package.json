@@ -1,0 +1,21 @@
+{
+  "name": "Oko - Your Assistant",
+  "version": "1.0.0",
+  "description": "WhatsApp Bot Automation and AI Routing",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Prakoso Adi Wibowo",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "@whiskeysockets/baileys": "^6.7.0",
+    "axios": "^1.7.2",
+    "google-tts-api": "^2.0.2",
+    "node-cron": "^3.0.3",
+    "pino": "^9.1.0",
+    "sharp": "^0.33.0" 
+  }
+}
